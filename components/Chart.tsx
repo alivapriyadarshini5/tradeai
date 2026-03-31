@@ -7,11 +7,18 @@ import {
   LinearScale,
   PointElement,
   Legend,
-  Tooltip
+  Tooltip,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
 
-ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement, Legend,Tooltip);
+ChartJS.register(
+  LineElement,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  Legend,
+  Tooltip,
+);
 
 export default function Chart() {
   const data = {
