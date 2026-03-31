@@ -20,16 +20,14 @@ ChartJS.register(
   Tooltip,
 );
 
-export default function Chart() {
+export default function Chart({ prices, labels }: any) {
   const data = {
-    labels: ["9:15", "10:00", "11:00", "12:00", "1:00", "2:00", "3:00"],
+    labels,
     datasets: [
       {
         label: "NIFTY Price",
-        data: [22450, 22500, 22480, 22550, 22600, 22580, 22650],
+        data: prices,
         borderColor: "#22c55e",
-        backgroundColor: "#22c55e",
-        tension: 0.4,
       },
     ],
   };
