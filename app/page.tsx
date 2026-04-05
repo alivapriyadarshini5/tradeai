@@ -1,6 +1,7 @@
 import Chart from "@/components/Chart";
 import AISignal from "@/components/AISignal";
 import Portfolio from "@/components/Portfolio";
+import Alerts from "@/components/Alerts";
 export default function Home() {
   const prices = [22450, 22500, 22480, 22550, 22600, 22580, 22650];
   const labels = ["9:15", "10:00", "11:00", "12:00", "1:00", "2:00", "3:00"];
@@ -19,6 +20,10 @@ export default function Home() {
       <div className="col-span-3 bg-gray-800 p-4 rounded-xl shadow-md">
         <h2 className="text-lg font-semibold mb-2">Portfolio</h2>
         <Portfolio />
+      </div>
+      <div className="col-span-3 bg-gray-800 p-4 rounded-xl shadow-md">
+        <h2 className="text-lg font-semibold mb-2">Alerts</h2>
+        <Alerts />
       </div>
     </div>
   );
